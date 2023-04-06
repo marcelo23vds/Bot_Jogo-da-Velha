@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 60px;" >Jogo da Velha</h1>
+        <h2 style="font-size: 30px; color: aliceblue;">Selecione um modo de jogo para começar:</h2>
+    </header>
+    
+    <div class="botoes">
+        <input type="button" value="Jogador X Jogador" class="modos" onclick="pxp()">
+        <input type="button" value="Jogador X Bot (Jogador inicia)" class="modos" onclick="pxb()">
+        <input type="button" value="Bot X Jogador (Bot inicia)" class="modos" onclick="bxp()">
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            <div style="border-start-start-radius: 30%;" class="celula" id="0"></div>
+            <div class="celula" id="1"></div>
+            <div class="celula" id="2"></div>
+            <div class="celula" id="3"></div>
+            <div class="celula" id="4"></div>
+            <div class="celula" id="5"></div>
+            <div class="celula" id="6"></div>
+            <div class="celula" id="7"></div>
+            <div style="border-end-end-radius: 30%;" class="celula" id="8"></div>
+        </div>
+        <div>
+            <button id="reiniciar" onclick="location.reload()">REINICIAR</button>
+        </div>
+    </div>
+    <div id="resultado">
+    </div>
+
+    <footer>
+        <p>Marcelo Vieira</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

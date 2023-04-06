@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vh;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: rgb(255, 0, 157);
+    background-image: url("img/wallpaper.jpg");
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+.modos {
+    padding: 5px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    margin: 5px;
+    border-start-start-radius: 30%;
+    border-end-end-radius: 30%;
+    background-color: rgb(66, 16, 184);
+    color: aliceblue;
+}
+
+.modos:hover {
+    background-color: rgb(255, 0, 157);
+	transform: scale(1.1);
+    color: aliceblue;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 20px;
+}
+
+.grid {
+    display: flex;
+    flex-flow: row wrap;  /*quando acabar a largura ir para linha de baixo */
+    justify-content: space-evenly;   /* espaçadas de forma igual */
+}
+
+#reiniciar {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 18pt;
+    width: 100px;
+    height: 50px;
+    margin: 30px;
+    border-start-start-radius: 30%;
+    border-end-end-radius: 30%;
+    background-color: rgb(66, 16, 184);
+    color: aliceblue;
+}
+
+#reiniciar:hover {
+    background-color: rgb(255, 0, 157);
+	transform: scale(1.1);
+    color: aliceblue;
+}
+
+#resultado {
+    padding: 20px auto;
+}
+
+.celula {
+    width: 75px;
+    height: 65px;
+    font-size: 30pt;
+    margin: 2px 2px;
+    font-weight: 300;
+    padding-top: 10px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: aliceblue;
+    color: blueviolet;
+}
+
+footer {
+    font-style: italic;
+    opacity: 50%;
+    color: aliceblue;
+}
